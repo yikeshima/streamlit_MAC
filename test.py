@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+df = pd.read_csv('streamlit_age_related_MAC/sevoMAC0205.csv',index_col="年齢")
+
 st.title('年齢調整MAC計算用')
 st.caption('年齢を入力してください')
 
@@ -21,5 +23,4 @@ if not age == "":
 
 if age == "":
     st.caption('セボフルランの年齢調整MACです')
-    df = pd.read_csv('streamlit_test\sevoMAC0205.csv',index_col="年齢")
     st.dataframe(df)
