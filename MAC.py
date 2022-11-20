@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('streamlit_age_related_MAC/sevoMAC0205.csv',index_col="年齢")
+df = pd.read_csv('/sevoMAC0205.csv',index_col="年齢")
 
 st.title('年齢調整MAC計算用')
 st.caption('年齢を入力してください')
